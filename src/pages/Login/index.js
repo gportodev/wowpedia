@@ -1,17 +1,19 @@
 import React from 'react';
 
+// import { Button } from 'react-native';
+
 import {
   Container,
   Logo,
   Form,
   InputEmail,
   InputPassword,
-  Button,
   Forgot,
+  Button,
   ButtonView,
   EmailView,
-  PasswordView,
   BorderEmail,
+  PasswordView,
   BorderPassword,
   ForgotView,
 } from './styles';
@@ -43,13 +45,14 @@ export default function Login() {
           </PasswordView>
 
           <BorderPassword />
-
-          <ForgotView>
-            <Forgot>Forgot your password?</Forgot>
-          </ForgotView>
         </Form>
+
+        <ForgotView>
+          <Forgot>Forgot your password?</Forgot>
+        </ForgotView>
+
         <ButtonView>
-          <Button title="Login" />
+          <Button title="Login" color="#1749CA" />
         </ButtonView>
       </Container>
     </>
