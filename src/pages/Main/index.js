@@ -4,7 +4,7 @@ import { View, Image, Text, Button } from 'react-native';
 import logo1 from '../../assets/logo1.jpg';
 import logo2 from '../../assets/logo2.jpg';
 
-export default function Main() {
+function Main({ navigation }) {
   return (
     <>
       <View
@@ -60,3 +60,5 @@ export default function Main() {
     </>
   );
 }
+
+export default Main;

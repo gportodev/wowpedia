@@ -1,7 +1,15 @@
 import React from 'react';
+import { StatusBar } from 'react-native';
 
-import Src from './pages/Main';
+import Main from './pages/Main';
+import Login from './pages/Login';
 
-export default function App() {
-  return <Src />;
-}
+const App = () => (
+  <>
+    <StatusBar barStyle="light-content" backgroundColor="#696969" />
+    {/* <Main /> */}
+    <Login />
+  </>
+);
+
+export default App;
