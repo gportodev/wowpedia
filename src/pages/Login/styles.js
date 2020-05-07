@@ -61,7 +61,7 @@ export const ButtonView = styled.View`
   margin-top: 10;
   justify-content: center;
   align-self: center;
-  /* align-items: center; */
+  align-items: center;
 `;
 
 export const Button = styled.Button`
