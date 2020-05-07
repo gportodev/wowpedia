@@ -30,7 +30,7 @@ export default function Login() {
             <InputEmail
               autoCorrect={false}
               autoCapitalize="none"
-              placeholder="Email adress"
+              placeholder="Email address"
             />
           </EmailView>
 
