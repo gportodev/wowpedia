@@ -1,13 +1,22 @@
-// import { createAppContainer } from 'react-navigation';
-// import { createStackNavigator } from 'react-navigation-stack';
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
 
-// import Main from './pages/Main';
-// import Login from './pages/Login';
+import Main from './pages/Main';
+import Login from './pages/Login';
 
-// const Routes = createAppContainer(
-//   createStackNavigator({
-//     Login,
-//   })
-// );
+const Routes = createAppContainer(
+  createStackNavigator(
+    {
+      Main,
+      Login,
+    },
+    {
+      headerLayoutPreset: 'center',
+      defaultNavigationOptions: {
+        headerShown: false,
+      },
+    }
+  )
+);
 
-// export default Routes;
+export default Routes;
