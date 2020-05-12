@@ -7,8 +7,8 @@ import Login from './pages/Login';
 const App = () => (
   <>
     <StatusBar barStyle="light-content" backgroundColor="#696969" />
-    <Main />
-    {/* <Login /> */}
+    {/* <Main /> */}
+    <Login />
   </>
 );
 
