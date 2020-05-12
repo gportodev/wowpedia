@@ -2,8 +2,8 @@
 
 # Screenshot
 
-![](pictures/wowhome.jpeg)  
+![](pictures/main.png)  
 
 ***
 
-![](pictures/wowlogin.jpeg)  
+![](pictures/login.png)  
