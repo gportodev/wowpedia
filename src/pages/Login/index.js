@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
+
+import { Button } from 'react-native';
 
 import {
   Container,
@@ -7,7 +9,6 @@ import {
   InputEmail,
   InputPassword,
   Forgot,
-  Button,
   ButtonView,
   EmailView,
   BorderEmail,
@@ -18,41 +19,43 @@ import {
 
 import logo3 from '../../assets/logo3.jpg';
 
-export default function Login() {
-  return (
-    <>
-      <Container>
-        <Logo source={logo3} />
-        <Form>
-          <EmailView>
-            <InputEmail
-              autoCorrect={false}
-              autoCapitalize="none"
-              placeholder="Email address"
-            />
-          </EmailView>
+export default class Login extends Component {
+  render() {
+    return (
+      <>
+        <Container>
+          <Logo source={logo3} />
+          <Form>
+            <EmailView>
+              <InputEmail
+                autoCorrect={false}
+                autoCapitalize="none"
+                placeholder="Email address"
+              />
+            </EmailView>
 
-          <BorderEmail />
+            <BorderEmail />
 
-          <PasswordView>
-            <InputPassword
-              autoCorrect={false}
-              autoCapitalize="none"
-              placeholder="Password"
-            />
-          </PasswordView>
+            <PasswordView>
+              <InputPassword
+                autoCorrect={false}
+                autoCapitalize="none"
+                placeholder="Password"
+              />
+            </PasswordView>
 
-          <BorderPassword />
-        </Form>
+            <BorderPassword />
+          </Form>
 
-        <ForgotView>
-          <Forgot>Forgot your password?</Forgot>
-        </ForgotView>
+          <ForgotView>
+            <Forgot>Forgot your password?</Forgot>
+          </ForgotView>
 
-        <ButtonView>
-          <Button title="Login" color="#1749CA" />
-        </ButtonView>
-      </Container>
-    </>
-  );
+          <ButtonView>
+            <Button title="Login" color="#1749CA" />
+          </ButtonView>
+        </Container>
+      </>
+    );
+  }
 }

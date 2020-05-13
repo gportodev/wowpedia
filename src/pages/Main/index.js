@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Button } from 'react-native';
+import { Button } from 'react-native';
 
 import {
   ViewMain,
@@ -9,6 +9,7 @@ import {
   MessageOne,
   MessageTwo,
   LoginButtonView,
+  CreateAccountView,
   SignUpText,
 } from './styles';
 
@@ -23,8 +24,6 @@ export default class Main extends Component {
   };
 
   render() {
-    // const { navigation } = this.props;
-
     return (
       <>
         <ViewMain>
@@ -44,9 +43,9 @@ export default class Main extends Component {
             />
           </LoginButtonView>
 
-          <View>
+          <CreateAccountView>
             <Button title="Create Account" color="#1749CA" />
-          </View>
+          </CreateAccountView>
 
           <SignUpText>Don't have an account? Sign Up</SignUpText>
         </ViewMain>

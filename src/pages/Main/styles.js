@@ -21,6 +21,7 @@ export const Logo2 = styled.Image`
   width: 300;
   height: 200;
   margin-top: -100;
+
 `;
 
 export const GreetMessage = styled.View`
@@ -39,11 +40,13 @@ export const MessageTwo = styled.Text`
 `;
 
 export const LoginButtonView = styled.View`
-  width: 100%;
-  height: 100;
-  justify-content: center;
-  alignItems: center;
+  width: 150;
+  padding-top: 40;
+`;
 
+export const CreateAccountView = styled.View`
+  width: 150;
+  padding-top: 30;
 `;
 
 export const SignUpText = styled.Text`
