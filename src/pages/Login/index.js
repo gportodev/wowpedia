@@ -28,6 +28,7 @@ export default class Login extends Component {
           <Form>
             <EmailView>
               <InputEmail
+                style={{ color: '#FFFF' }}
                 autoCorrect={false}
                 autoCapitalize="none"
                 placeholder="Email address"
@@ -38,7 +39,9 @@ export default class Login extends Component {
 
             <PasswordView>
               <InputPassword
+                style={{ color: '#FFFF' }}
                 autoCorrect={false}
+                secureTextEntry
                 autoCapitalize="none"
                 placeholder="Password"
               />

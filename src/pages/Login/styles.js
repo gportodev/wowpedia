@@ -3,7 +3,6 @@ import styled from 'styled-components/native';
 
 export const Container = styled.View`
   flex: 1;
-  /* alignItems: center; */
   justifyContent: center;
   background: black;
 `;
@@ -28,7 +27,10 @@ export const PasswordView = styled.View`
 
 export const InputEmail = styled.TextInput.attrs({
   placeholderTextColor: '#FFFFFF',
+
 })``;
+
+
 
 export const BorderEmailView = styled.View`
 `;
