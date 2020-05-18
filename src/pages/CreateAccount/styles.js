@@ -6,8 +6,6 @@ export const Container = styled.View`
   background: black;
 `;
 
-
-
 export const List = styled.View`
   flex-direction: row;
   justify-content: center;
@@ -15,17 +13,13 @@ export const List = styled.View`
 `;
 
 export const Logo2 = styled.Image`
-  /* resizeMode: contain; */
-  width: 200;
+  width: 260;
   height: 200;
-  /* background: red */
 `;
 
 export const Logo3 = styled.Image`
-  /* resizeMode: contain; */
-  width: 200;
+  width: 210;
   height: 200;
-  /* background: blue */
 `;
 
 export const Form = styled.View`
