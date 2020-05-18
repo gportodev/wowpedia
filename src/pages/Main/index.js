@@ -17,10 +17,16 @@ import logo1 from '../../assets/logo1.jpg';
 import logo2 from '../../assets/logo2.jpg';
 
 export default class Main extends Component {
-  handleNavigate = () => {
+  Login = () => {
     const { navigation } = this.props;
 
     navigation.navigate('Login');
+  };
+
+  CreateAccount = () => {
+    const { navigation } = this.props;
+
+    navigation.navigate('CreateAccount');
   };
 
   render() {
@@ -36,15 +42,15 @@ export default class Main extends Component {
           </GreetMessage>
 
           <LoginButtonView>
-            <Button
-              title="Login"
-              color="#1749CA"
-              onPress={this.handleNavigate}
-            />
+            <Button title="Login" color="#1749CA" onPress={this.Login} />
           </LoginButtonView>
 
           <CreateAccountView>
-            <Button title="Create Account" color="#1749CA" />
+            <Button
+              title="Create Account"
+              color="#1749CA"
+              onPress={this.CreateAccount}
+            />
           </CreateAccountView>
 
           <SignUpText>Don't have an account? Sign Up</SignUpText>
