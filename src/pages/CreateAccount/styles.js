@@ -9,66 +9,60 @@ export const Container = styled.View`
 export const List = styled.View`
   flex-direction: row;
   justify-content: center;
-  margin-top: 10;
+  margin-top: 15;
 `;
 
 export const Logo2 = styled.Image`
-  width: 260;
-  height: 200;
+  width: 200;
+  height: 100;
 `;
 
 export const Logo3 = styled.Image`
-  width: 210;
-  height: 200;
+  width: 200;
+  height: 100;
 `;
 
 export const Form = styled.View`
-  margin-top: -20;
+  margin-top: 30;
+  align-items: center;
 `;
 
-export const NickView = styled.View`
-  margin-top: 50px;
+export const Label = styled.Text`
+  font-size: 16;
+  font-weight: bold;
+  color: #FDB32A;
+  margin-bottom: 10;
 `;
 
-
-export const EmailView = styled.View`
-  margin-top: 50px;
-`;
-
-export const PasswordView = styled.View`
-  margin-top: 50px;
-`;
-
-export const Input = styled.TextInput.attrs({
-  placeholderTextColor: '#FFFFFF',
-})``;
-
-
-export const Border = styled.View`
-  border-bottom-color: #f8f8f8;
-  border-bottom-width: 1;
-`;
-
-export const LoginButtonView = styled.View`
-  width: 150;
-  padding-top: 40;
+export const Input = styled.TextInput`
+  background-color: #353940;
+  border-width: 1;
+  border-color: #717175;
+  border-radius: 5;
+  height: 34;
+  color: black;
+  width: 200;
+  margin-top: 10;
+  margin-bottom: 15;
 `;
 
 export const CreateAccountView = styled.View`
   width: 100%;
-  padding-top: 50;
+  margin-top: 20;
   align-items: center;
 `;
 
 
 export const Header = styled.View`
-  align-self: center;
-  margin-top: 50;
+  align-items: center;
 `;
 
 export const Message = styled.Text`
   color: #FDB32A;
-  fontSize: 22;
+  font-size: 20;
+  margin-top: 10;
+  margin-bottom: 10;
+  justify-content: center;
 `;
 
 
