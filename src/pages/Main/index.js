@@ -13,8 +13,8 @@ import {
   SignUpText,
 } from './styles';
 
-import logo1 from '../../assets/logo1.jpg';
-import logo2 from '../../assets/logo2.jpg';
+import logo1 from '../../assets/logos/logo1.jpg';
+import logo2 from '../../assets/logos/logo2.jpg';
 
 export default class Main extends Component {
   Login = () => {

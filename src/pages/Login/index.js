@@ -1,64 +1,38 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import { Button } from 'react-native';
 
-import {
-  Container,
-  Logo,
-  Form,
-  InputEmail,
-  InputPassword,
-  Forgot,
-  ButtonView,
-  EmailView,
-  BorderEmail,
-  PasswordView,
-  BorderPassword,
-  ForgotView,
-} from './styles';
+import { Container, Logo, Form, Input, ButtonView } from './styles';
 
-import logo3 from '../../assets/logo3.jpg';
+import logo3 from '../../assets/logos/logo3.jpg';
 
-export default class Login extends Component {
-  render() {
-    return (
-      <>
-        <Container>
-          <Logo source={logo3} />
-          <Form>
-            <EmailView>
-              <InputEmail
-                style={{ color: '#FFFF' }}
-                autoCorrect={false}
-                autoCapitalize="none"
-                placeholder="Email address"
-              />
-            </EmailView>
+const Login = () => {
+  return (
+    <Container>
+      <Logo source={logo3} />
+      <Form>
+        <Input
+          autoCorrect={false}
+          autoCapitalize="none"
+          returnKeyType="next"
+          placeholder="Email"
+          placeholderTextColor="#65279"
+        />
 
-            <BorderEmail />
+        <Input
+          autoCorrect={false}
+          secureTextEntry
+          autoCapitalize="none"
+          placeholder="Password"
+          placeholderTextColor="#65279"
+        />
+      </Form>
 
-            <PasswordView>
-              <InputPassword
-                style={{ color: '#FFFF' }}
-                autoCorrect={false}
-                secureTextEntry
-                autoCapitalize="none"
-                placeholder="Password"
-              />
-            </PasswordView>
+      <ButtonView>
+        <Button title="Login" color="#1749CA" />
+      </ButtonView>
+    </Container>
+  );
+};
 
-            <BorderPassword />
-          </Form>
-
-          <ForgotView>
-            <Forgot>Forgot your password?</Forgot>
-          </ForgotView>
-
-          <ButtonView>
-            <Button title="Login" color="#1749CA" />
-          </ButtonView>
-        </Container>
-      </>
-    );
-  }
-}
+export default Login;

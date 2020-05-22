@@ -6,10 +6,12 @@ export const Container = styled.View`
   background: black;
 `;
 
-export const List = styled.View`
-  flex-direction: row;
-  justify-content: center;
+export const Logo1 = styled.Image`
+  resizeMode: contain;
+  width: 400;
+  height: 50;
   margin-top: 15;
+  margin-bottom: 40;
 `;
 
 export const Logo2 = styled.Image`
@@ -23,15 +25,8 @@ export const Logo3 = styled.Image`
 `;
 
 export const Form = styled.View`
-  margin-top: 30;
+  margin-top: -30;
   align-items: center;
-`;
-
-export const Label = styled.Text`
-  font-size: 16;
-  font-weight: bold;
-  color: #FDB32A;
-  margin-bottom: 10;
 `;
 
 export const Input = styled.TextInput`
@@ -40,29 +35,44 @@ export const Input = styled.TextInput`
   border-color: #717175;
   border-radius: 5;
   height: 34;
-  color: black;
+  color: #FFFF;
   width: 200;
-  margin-top: 10;
   margin-bottom: 15;
+  padding-left: 10;
+`;
+
+export const List = styled.View`
+  flex-direction: row;
+  justify-content: center;
+  margin-top: -10;
+`;
+
+export const ListRace = styled.View`
+  height: 200;
+  width: 100%;
+  margin-left: 5;
+  margin-right: 5;
+  align-items: center;
+`;
+
+export const Race = styled.Image`
+  resizeMode: contain;
+  width: 100%;
+  height: 200;
+`;
+
+export const CarrouselView = styled.View`
+  padding-top: 15;
+`;
+
+export const PaginationView = styled.View`
+  margin-top: -1;
 `;
 
 export const CreateAccountView = styled.View`
   width: 100%;
-  margin-top: 20;
   align-items: center;
-`;
-
-
-export const Header = styled.View`
-  align-items: center;
-`;
-
-export const Message = styled.Text`
-  color: #FDB32A;
-  font-size: 20;
-  margin-top: 10;
-  margin-bottom: 10;
-  justify-content: center;
+  padding-top: -10;
 `;
 
 
