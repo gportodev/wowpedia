@@ -9,3 +9,6 @@
 ![](pictures/login.png)  
 
 ***
+![](pictures/create_account.png)  
+
+***
