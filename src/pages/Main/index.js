@@ -29,6 +29,12 @@ export default class Main extends Component {
     navigation.navigate('CreateAccount');
   };
 
+  ChooseYourSide = () => {
+    const { navigation } = this.props;
+
+    navigation.navigate('ChooseYourSide');
+  };
+
   render() {
     return (
       <>

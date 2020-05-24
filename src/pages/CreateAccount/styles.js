@@ -9,23 +9,21 @@ export const Container = styled.View`
 export const Logo1 = styled.Image`
   resizeMode: contain;
   width: 400;
-  height: 50;
-  margin-top: 15;
+  height: 150;
+  margin-top: 30;
   margin-bottom: 40;
 `;
 
-export const Logo2 = styled.Image`
-  width: 200;
-  height: 100;
-`;
-
-export const Logo3 = styled.Image`
-  width: 200;
-  height: 100;
+export const Header = styled.Text`
+  padding-top: 10;
+  align-self: center;
+  color: #FDB32A;
+  font-size: 20;
+  justify-content: center;
 `;
 
 export const Form = styled.View`
-  margin-top: -30;
+  margin-top: 40;
   align-items: center;
 `;
 
@@ -41,39 +39,17 @@ export const Input = styled.TextInput`
   padding-left: 10;
 `;
 
-export const List = styled.View`
-  flex-direction: row;
-  justify-content: center;
-  margin-top: -10;
+export const BView = styled.View`
+  align-self: center;
+  margin-top: 20;
+  width: 200;
 `;
 
-export const ListRace = styled.View`
-  height: 200;
-  width: 100%;
-  margin-left: 5;
-  margin-right: 5;
-  align-items: center;
-`;
 
-export const Race = styled.Image`
-  resizeMode: contain;
-  width: 100%;
-  height: 200;
-`;
 
-export const CarrouselView = styled.View`
-  padding-top: 15;
-`;
 
-export const PaginationView = styled.View`
-  margin-top: -1;
-`;
 
-export const CreateAccountView = styled.View`
-  width: 100%;
-  align-items: center;
-  padding-top: -10;
-`;
+
 
 
 
