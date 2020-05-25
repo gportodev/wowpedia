@@ -113,8 +113,6 @@ export default function ChooseYourSide() {
     ],
   });
 
-  const [modalVisible, setModalVisible] = useState(false);
-
   function _renderItem({ item }) {
     return (
       <ListRace>
@@ -169,7 +167,7 @@ export default function ChooseYourSide() {
           />
 
           <CreateAccountView>
-            <Button title="Create Account" color="#c91010" />
+            <Button title="For the Horde" color="#c91010" />
           </CreateAccountView>
         </CarrouselView>
       ) : (
@@ -205,7 +203,7 @@ export default function ChooseYourSide() {
           />
 
           <CreateAccountView>
-            <Button title="Create Account" color="#1749CA" />
+            <Button title="For the Alliance" color="#1749CA" />
           </CreateAccountView>
         </CarrouselView>
       )}
