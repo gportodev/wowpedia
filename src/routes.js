@@ -1,26 +1,22 @@
-import { createAppContainer } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
+import React from 'react'
 
-import Main from './pages/Main';
-import Login from './pages/Login';
-import CreateAccount from './pages/CreateAccount';
-import ChooseYourSide from './pages/ChooseYourSide';
+import { NavigationContainer } from '@react-navigation/native'
+import { createStackNavigator } from '@react-navigation/stack'
 
-const Routes = createAppContainer(
-  createStackNavigator(
-    {
-      Main,
-      Login,
-      CreateAccount,
-      ChooseYourSide,
-    },
-    {
-      headerLayoutPreset: 'center',
-      defaultNavigationOptions: {
-        headerShown: false,
-      },
-    }
+import Home from './pages/Home'
+import Menu from './pages/Menu'
+
+const { Navigator, Screen } = createStackNavigator()
+
+export default function Routes () {
+  return (
+    <NavigationContainer>
+      <Navigator screenOptions={{ headerShown: false }}>
+
+        <Screen name='Home' component={Home} />
+        <Screen name='Menu' component={Menu} />
+
+      </Navigator>
+    </NavigationContainer>
   )
-);
-
-export default Routes;
+}
