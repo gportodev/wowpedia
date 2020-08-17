@@ -15,3 +15,6 @@ web-report/
 
 # macOS
 .DS_Store
+
+pictures/
+src/assets/
