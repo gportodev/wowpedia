@@ -953,6 +953,11 @@
   resolved "https://registry.yarnpkg.com/@emotion/unitless/-/unitless-0.7.5.tgz#77211291c1900a700b8a78cfafda3160d76949ed"
   integrity sha512-OWORNpfjMsSSUBVrRBVGECkhWcULOAJz9ZW8uK9qgxD+87M7jHRcvh/A96XXNhXTLmKcoYSQtBEX7lHMO7YRwg==
 
+"@expo-google-fonts/medievalsharp@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@expo-google-fonts/medievalsharp/-/medievalsharp-0.1.0.tgz#2f9813dcc35583402cc218c1f18f8253aaeb51e0"
+  integrity sha512-tHVsQwAtryEphzIoRPVZilasxe49YtfISyidOnpGqh/X/IXDlCYCw5U4qYV1MPuWW8dyjkMoYv3Q3WfZaXiuaA==
+
 "@expo/vector-icons@^10.0.2":
   version "10.1.0"
   resolved "https://registry.yarnpkg.com/@expo/vector-icons/-/vector-icons-10.1.0.tgz#3fb2517924b031c1b98f86fa51a2032a257759b0"
