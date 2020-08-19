@@ -1,7 +1,7 @@
 import React from 'react'
 
-import img from '../../assets/home/background.png'
-import ico from '../../assets/home/icon.png'
+import img from '../../assets/Home/background.png'
+import ico from '../../assets/Home/icon.png'
 
 import { Background, Button, Icon } from './styles'
 
