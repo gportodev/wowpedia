@@ -4,14 +4,14 @@ import { useFonts, MedievalSharp_400Regular } from '@expo-google-fonts/medievals
 
 import { AppLoading } from 'expo'
 
-import { Background, Categories, Title, Button, Story } from './styles'
+import { Background, Categories, Title, Button, Img } from './styles'
 
-import img from '../../assets/menu/background.png'
-import str from '../../assets/menu/story.png'
-import rc from '../../assets/menu/races.png'
-import cls from '../../assets/menu/class.png'
+import img from '../../assets/Menu/background.png'
+import str from '../../assets/Menu/story.png'
+import rc from '../../assets/Menu/races.png'
+import cls from '../../assets/Menu/class.png'
 
-export default function Menu () {
+export default function Menu ({ navigation }) {
   const [fontsLoaded] = useFonts({
     MedievalSharp_400Regular
   })
@@ -24,19 +24,19 @@ export default function Menu () {
     <Background source={img}>
 
       <Categories>
-        <Button>
+        <Button onPress={() => navigation.navigate('Story')}>
           <Title style={{ fontFamily: 'MedievalSharp_400Regular' }}>Story</Title>
-          <Story source={str} />
+          <Img source={str} />
         </Button>
 
         <Button>
           <Title style={{ fontFamily: 'MedievalSharp_400Regular' }}>Races</Title>
-          <Story source={rc} />
+          <Img source={rc} />
         </Button>
 
         <Button>
           <Title style={{ fontFamily: 'MedievalSharp_400Regular' }}>Classes</Title>
-          <Story source={cls} />
+          <Img source={cls} />
         </Button>
       </Categories>
 
