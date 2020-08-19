@@ -4,13 +4,13 @@ export const Background = styled.ImageBackground`
   flex: 1;
 `
 export const Button = styled.TouchableOpacity`
-  width: 67;
-  height: 68;
+  width: 67px;
+  height: 68px;
   align-self: center;
   margin-top: 500px;
 `
 
 export const Icon = styled.Image`
-  width: 67;
-  height: 68;
+  width: 67px;
+  height: 68px;
 `
