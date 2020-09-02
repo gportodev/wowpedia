@@ -4,6 +4,8 @@ import { useFonts, MedievalSharp_400Regular } from '@expo-google-fonts/medievals
 
 import { AppLoading } from 'expo'
 
+import { Alert } from 'react-native'
+
 import { Background, Header, Icon, Categories, Item, Title, Button, Img } from './styles'
 
 import ico from '../../assets/Home/icon.png'
@@ -32,7 +34,7 @@ export default function Story ({ navigation }) {
       <Categories>
 
         <Item>
-          <Button>
+          <Button onPress={() => Alert.alert('Not Available!')}>
             <Img source={str} />
             <Title
               style={{ fontFamily: 'MedievalSharp_400Regular' }}
@@ -45,7 +47,7 @@ export default function Story ({ navigation }) {
         </Item>
 
         <Item>
-          <Button>
+          <Button onPress={() => Alert.alert('Not Available!')}>
             <Img source={cls} />
             <Title
               style={{ fontFamily: 'MedievalSharp_400Regular' }}
@@ -58,7 +60,7 @@ export default function Story ({ navigation }) {
         </Item>
 
         <Item>
-          <Button>
+          <Button onPress={() => Alert.alert('Not Available!')}>
             <Img source={rc} />
             <Title
               style={{ fontFamily: 'MedievalSharp_400Regular' }}

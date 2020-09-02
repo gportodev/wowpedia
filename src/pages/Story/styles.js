@@ -24,13 +24,14 @@ export const Categories = styled.View`
 
 export const Item = styled.View`
   background: #403f3f3f;
-  width: 337px;
+  width: 400px;
   margin: 10px;
   border-radius: 15px;
 `
 
 export const Button = styled.TouchableOpacity`
   flex-direction: row;
+  border-radius: 6px;
 `
 
 export const Title = styled.Text`
@@ -38,7 +39,7 @@ export const Title = styled.Text`
   color: #FFE42C;
   margin: 40px 15px;
   text-shadow-color: #3a3d3a;
-  text-shadow-radius: 10;
+  text-shadow-radius: 10px;
 `
 
 export const Img = styled.Image`

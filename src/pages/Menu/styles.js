@@ -22,11 +22,11 @@ export const Title = styled.Text`
   font-size: 36px;
   color: #FFE42C;
   text-shadow-color: #3a3d3a;
-  text-shadow-radius: 10;
+  text-shadow-radius: 10px;
 `
 
 export const Img = styled.Image`
   width: 130px;
   height: 130px;
-  border-radius: 100;
+  border-radius: 100px;
 `
